@@ -1,0 +1,34 @@
+{
+	"web_hook_url":"ANY WEB HOOK URL",
+	"channel":"#event-notify",
+	"channel_test":"#event-notify",
+	"fallback_msg":"fallback error has occured.",
+	"pretext_msg":"New event arrive.",
+	"service_properties":{
+		"atnd":{
+			"api_url":"https://api.atnd.org/events/count=100",
+			"bot_name":"notify-atnd",
+			"kvs_name":"./leveldb/atnd",
+			"color":"#000000"
+		},
+		"doorkeeper":{
+			"api_url":"http://api.doorkeeper.jp/events?sort=published_at&locale=ja&",
+			"bot_name":"notify-doorkeeper",
+			"kvs_name":"./leveldb/doorkeeper",
+			"color":"#00D0A0"
+		},
+		"connpass":{
+			"api_url":"http://connpass.com/api/v1/event/?&order=3&count=100",
+			"bot_name":"notify-connpass",
+			"kvs_name":"./leveldb/connpass",
+			"color":"#36a64f",
+			"icon_url":"https://connpass.com/static/img/api/connpass_logo_3.png"
+		},
+		"zusaar":{
+			"api_url":"http://www.zusaar.com/api/event/?count=100",
+			"bot_name":"notify-zusaar",
+			"kvs_name":"./leveldb/zusaar",
+			"color":"#0000FF"
+		}
+	}
+}
